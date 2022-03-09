@@ -1,0 +1,18 @@
+<div>
+ <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">id</th> 
+        <th scope="col">email</th>
+        <th scope="col">sign up time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of userService.users">
+        <td>{{i._id}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.createdAt}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
